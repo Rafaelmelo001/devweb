@@ -1,0 +1,170 @@
+<!--Criar Formulário-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <html lang="pt-br">
+        <title>Formulário_Pronto.com.br</title>
+        <link rel="stylesheet" href="../css/estiloformulario.css">
+    </head>
+    
+    <body>
+       <h1 class="myHeader">Formulário de Inscrição</h1>
+        
+       <form action="processa.php" method="get" name="cadastro" accept-charset="utf-8">
+        
+        <div id="caixa">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="Nome">Nome Completo:<em>*</em></label><br>
+                    <input type="text" name="Nome" placeholder="Digite seu nome aqui"
+                    size="50%"
+                    required
+                    autofocus
+                    class="box">
+                </p>
+    
+                <p>
+                    Idade:<em>*</em>
+                    <select name="idade" id="idade">
+                        <option value="0 a 10">0 a 9</option>
+                        <option value="11 a 17">11 a 17</option>
+                        <option value="18 a 25">18 a 25</option>
+                        <option value="26 ou mais">26 ou mais</option>
+                    </select>
+                </p>
+            
+                <p>
+                    <label for="Email">Email:<em>*</em></label><br>
+                    <input type="email" name="email" placeholder="Digite aqui seu email"
+                    size="50%"
+                    required
+                    class="box">
+                </p>
+    
+                <p>
+                    <label for="sexo">Sexo:</label><br>
+                    <input type="radio" name="sexo">Masculino
+                    <input type="radio" name="sexo">Feminino
+                </p>
+                
+                <p>
+                    Data de Nascimento: <input type="date" name="data" id="data">
+                </p>
+    
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados Complementares</legend>
+                <p>
+                    Grau de Escolaridade:
+                    <select name="escolaridade" id="escolaridade">
+                        <option value="Superior Completo">Superior Completo</option>
+                        <option value="Superior Incompleto">Superior Incompleto</option>
+                        <option value="Medio Completo" selected>Medio Completo</option>
+                        <option value="Medio Incompleto">Medio Incompleto</option>
+                        <option value="Fundamental Completo">Fundamental Completo</option>
+                        <option value="Fundamental Incompleto">Fundamental Incompleto</option>
+                    </select>
+                </p>
+                
+                
+    
+                <p>
+                    Estilos musicais preferidos:
+                    <select name="musicas" id="musicas" multiple>
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Rap">Rap</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="MPB">MPB</option>
+                        <option value="Classico">Classico</option>                
+                    </select>
+                </p>
+    
+                <p>
+                    <label for="usuario" name="usuario">Nome de Usuario:</label>
+                    <input type="text"  name="usuario" placeholder="seu nome de usuario" class="box">
+                </p>
+    
+                <p>
+                    <label for="Senha">Senha:<em>*</em></label><br>
+                    <input type="password" name="Senha" placeholder="Crie uma Senha max 8 caracteres"
+                    size="50%"
+                    maxlength="8" required class="box">
+                </p>
+                
+                <p>
+                    <label for="cor"> Cor preferida:</label>
+                    <input type="color" name="cor">
+                </p>
+    
+                <p>
+                    <label for="filhos">Quantidade de Filhos:</label>
+                    <input type="">
+                </p>
+    
+                <p>
+                    <label for="carros">Quantidade de carros:</label>
+                    0<input type="range" name="quantidade">5
+                </p>
+    
+                
+                <!--
+                <p>
+                    <input type="month" name="mês">
+                </p>
+                -->
+                
+                
+                <p>Possuo algum tipo de deficiência (marque somente uma opção):</p>
+                <p>
+                    SIM<input type="checkbox"> NÂO <input type="checkbox">
+                </p>
+    
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Outras informacoes</legend>
+                
+                <P>Insira aqui abaixo seu documento<p>
+                    <input type="file" name="arquivo">
+                </P><br>
+                
+                <p>
+                    <label for="sobresite">Comentario sobre o site (min 20 e max 350 caracteres):</label>
+                    <textarea name="cometarios" id="" cols="50" rows="8" 
+                    id="coment" maxlength="350" minlength="20"></textarea>
+                </p>
+    
+                <P><input type="checkbox" name="viaemail"><label for="viaemail"></label>
+                    Desejo receber ofertas via email
+                </P>
+                
+                <div>
+                    <p>
+                    <input type="submit" value="Enviar" id="Button" onclick="alert('Obrigado por se cadastrar, clique em OK para sair')">
+                    </p>
+                </div>
+    
+                <p>
+                    Se você clicar no botão "Enviar", os dados do formulário serão
+                    enviados para uma página.
+                </p>
+            
+                <p><span>ALERTA!!!</span> Caso queira apagar todo formulário pressione "Reset" <input type="reset" name="reset" value="Reset"></p>
+            </fieldset>
+            
+        </div>    
+               
+           
+           
+           
+        </form>
+    
+    </body>
+</html>

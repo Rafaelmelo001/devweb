@@ -1,0 +1,58 @@
+.myHeader {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 0, 78);
+}
+
+#data {
+    color: none;
+}
+
+legend {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #1E2836;
+    
+}
+
+#caixa {
+    background-color: rgb(0,0,0,0.7);
+    color: aliceblue;
+    position: center;
+    padding: 80px;
+    font-weight: lighter;
+    font-size: 105%;
+    letter-spacing: 1px;
+    left: 55%;
+    right: 55%;
+    width: 500px;
+    height: 1300px;
+    border-radius: 9px;
+
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:invalid {
+    border: 6px solid red;
+}
+
+span {
+    color: orangered;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.box {
+    background: none; /*fundo da caixa de texto*/
+    outline: none;  /* Ao clicar na ciaxa de texto ela não irá ficar marcada*/
+    border: none;   /*sem borda da caixa de texto*/
+    border-bottom: 1px solid white; /*borda inferior*/
+    color: rgb(180, 0, 0); /*cor da letra na digitação*/
+}
+
